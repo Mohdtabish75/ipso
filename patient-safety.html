@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <title>Patient-safety</title>
+    <style>
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .hero-section {
+            height: 600px;
+            background: rgb(92, 177, 255);
+            background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
+        .how-section1{
+            margin-top:-7%;
+            padding: 7%;
+        }
+        .how-section1 .row h1
+        {
+            margin-top: 23%;
+        }
+        .how-img 
+        {
+            text-align: center;
+        }
+        .how-img img{
+            width: 70%;
+        }
+
+        .img-fluid{
+            border-radius: 16px;
+            margin-left: 15%;
+            margin-top: 18%;
+            /* filter: drop-shadow(82px 12px 1.5px #63BCC8); */
+            box-shadow: 20px 30px 40px #1089fa;
+            mask-image: url(magicpattern-blob-1715076039659.png);
+            mask-position: 100%;
+            mask-size: cover;
+            
+        }
+        #main-container{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        #main-container #container{
+            width: 80vw;
+            background-color: #b7edf4;
+            border-radius: 40px;
+            padding: 5%;
+        }
+        ul li{
+            text-align: left;
+        }
+        #main-container #container ol li{
+            text-align: left;
+        }
+        #main-container #container h1{
+            color:rgb(10, 142, 142);
+        }
+        #main-container #container #image{
+            display: flex;
+            justify-content: center;
+        }
+        #main-container #container #image img{
+            width: 30vw;
+            height: 30vh;
+            border-radius: 20px;
+            margin-left: 20px;
+            border: 4px solid #329DFF;
+        }
+        footer{
+            width: 100vw;
+            height: 30vh;
+            background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer #footer-page{
+            width: 80vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        footer #footer-page img{
+            width: 20vw;
+        }
+        footer #footer-page ul{
+            display: flex;
+            flex-direction: column;
+        }
+        footer #footer-page ul a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 1.3rem;
+        }
+        footer #footer-page ul a:hover{
+            color: blue;
+        }
+        footer #footer-page #search-box #search{
+            width: 23vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 20px;
+            
+        }
+        footer #footer-page #search-box #search #input{
+            width: 15vw;
+            height: 4vh;
+            border: none;
+            background-color: transparent;
+            margin: 16px;
+        }
+        footer #footer-page #search-box #search #submit{
+            width: 6vw;
+            height: 5vh;
+            padding: 0;
+            font-size: 1.2rem;
+            border: 0;
+            background: linear-gradient(180deg, #4797E1 0%, #329DFF 55.5%, #63A9EA 100%);
+            border-radius: 40px;
+            color: white;
+        }
+        @media screen and (max-width:768px){
+            .nav-link {
+                font-weight: 500;
+            }
+            
+            .hero-section {
+                height: auto;
+                background: rgb(92, 177, 255);
+                background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            }
+            .how-section1{
+                margin-top:-7%;
+                padding: 7%;
+            }
+            .how-section1 .row
+            {
+                margin-top: 8%;
+            }
+            .how-img 
+            {
+                text-align: center;
+            }
+            .how-img img{
+                width: 100%;
+            }
+            
+            .img-fluid{
+                border-radius: 16px;
+                margin-top: 1%;
+                margin-left: -4%;
+                filter: drop-shadow(12px 12px 1.5px #63BCC8);
+            }
+            #main-container{
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+            }
+            #main-container #container{
+                width: 95vw;
+                background-color: #b7edf4;
+                border-radius: 40px;
+                padding: 5%;
+            }
+            #main-container #container h1{
+                color:rgb(10, 142, 142);
+            }
+            #main-container #container li{
+                text-align: justify;
+            }
+            #main-container #container #image{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #main-container #container #image img{
+                width: 88vw;
+                height: 27vh;
+                border-radius: 40px;
+                margin-left: -5px;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+                box-shadow: 10px 10px 10px gray;
+            }
+            footer{
+                width: 100vw;
+                height:auto;
+                background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                border-radius: 40px 40px 0 0;
+                padding: 5%;
+
+            }
+            footer #footer-page{
+                width: 85vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+            footer #footer-page p{
+                font-size: 1rem;
+            }
+            footer #footer-page img{
+                width: 60vw;
+            }
+            footer #footer-page ul{
+                display: flex;
+                flex-direction: column;
+            }
+            footer #footer-page ul a{
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                font-size: 1.3rem;
+                cursor: pointer;
+            }
+            
+            footer #footer-page #search-box #search{
+                width: 65vw;
+                height: 5vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                border: 1px solid gray;
+                border-radius: 20px;
+                /* padding: 10px; */
+                
+            }
+            footer #footer-page #search-box #search #input{
+                width: 15vw;
+                height: 4vh;
+                border: none;
+                background-color: transparent;
+            }
+            footer #footer-page #search-box #search #submit{
+                width: 20vw;
+                height: 5vh;
+                padding: 0;
+                font-size: 1.2rem;
+                border: 0;
+                background: linear-gradient(180deg, #2f618f 100%, #63A9EA 100%);
+                border-radius: 40px;
+                color: white;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);">
+        <div class="container" style="max-width: 1440px;">
+            <a class="navbar-brand" href="#"><img src="./Assets/logo/IPSO_Logofinal[1].png" alt="logo"
+                    style="width: 220px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-safety.html">Patient safety</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="we-do.html">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="hero-section">
+            <div class="how-section1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 style="color: #00B1CA;">Patient Safety</h1>
+                            <h5>Understanding Patient Safety</h5>
+                            <p>Patient safety is the cornerstone of quality healthcare. It encompasses the proactive measures and practices aimed at preventing harm to patients during their interactions with the healthcare system. Patient safety involves identifying, reducing, and preventing errors, accidents, and adverse events that can occur during medical treatment, diagnosis, or care delivery.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="how-img">
+                                <img src="HC.png" class="img-fluid" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br><br>
+    <div id="main-container">
+        <div id="container">
+            <div id="image">
+                <div>
+                    <h1>Key Elements of Patient Safety</h1>
+                    <ol>
+                        <li>
+                            Error Prevention: Patient safety efforts focus on identifying potential errors or hazards in healthcare processes and implementing measures to prevent them.This includes strategies such as double-checking medications, verifying patient identities, and using standardized protocols to reduce the risk of mistakes.
+                        </li>
+                    
+                            </div>
+                            <div id="img">
+                                <img src="HC.png" alt="">
+                            </div>
+                        </div>
+                    <ol>
+                        <li>Infection Control: Preventing healthcare-associated infections is a critical aspect of patient safety. Proper hand hygiene, sterile techniques, and infection control protocols help minimize the spread of infections within healthcare facilities and protect patients from harm.</li><br>
+                        <li>Communication: Effective communication among healthcare providers, patients, and caregivers is essential for patient safety. Clear and accurate communication ensures that critical information is shared, understood, and acted upon, reducing the risk of misunderstandings, errors, and adverse events.</li><br>
+                        <li>Medication Safety: Medication errors are a significant concern in healthcare settings. Patient safety initiatives focus on ensuring the safe prescribing, dispensing, administration, and monitoring of medications to prevent adverse drug reactions, overdoses, and other medication-related incidents.</li><br>
+                        <li>Equipment Safety: Medical devices and equipment play a crucial role in patient care, but they can also pose risks if not used properly. Patient safety efforts involve maintaining, inspecting, and testing equipment regularly to ensure its safe and effective operation.</li><br>
+                        <li>Care Coordination: Seamless care coordination across different healthcare settings and providers is essential for patient safety. Timely communication, information sharing, and collaboration among healthcare teams help prevent gaps in care, reduce the risk of errors, and improve patient outcomes.</li><br>
+                        <li>Patient Empowerment: Empowering patients to actively participate in their care promotes patient safety. Providing patients with information, education, and opportunities for shared decision-making enables them to advocate for their safety, ask questions, and alert healthcare providers to potential concerns.</li>
+                 </ol>
+            
+            <h3>Why Patient Safety Matters</h3>
+            <ul>   
+                <li style="text-align: left;">Ensuring patient safety is not only a moral imperative but also a fundamental aspect of quality healthcare. By prioritizing patient safety, healthcare organizations can:</li>
+                <li style="text-align: left;">Improve patient outcomes and experiences</li>
+                <li>Reduce healthcare costs associated with preventable errors and adverse events</li>
+                <li style="text-align: left;">Enhance trust and confidence in the healthcare system</li>
+                <li>Demonstrate commitment to ethical and professional standards</li>
+            </ul>
+        </div>
+    </div><br><br>
+    <footer>
+        <div id="footer-page">
+            <div>
+                <img src="Assets/logo/IPSO Logofinal[1] single.png" alt=""><br>
+                <p>Indian Patient Safety <br> Outreach Organisation</p>
+            </div>
+            <ul>
+                <a href="#">About us</a>
+                <a href="#">Patient Safety</a>
+                <a href="#">What we do</a>
+                <a href="#">Contact</a>
+            </ul>
+            <div id="search-box">
+                <h1>Be Our  Subscribers <br><p style="font-size: 12px;">to get the latest news</p>
+                    <form action="#">
+                        <div id="search">
+                            <input type="text" name="" id="input">
+                            <input type="submit" name="submit" id="submit">
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

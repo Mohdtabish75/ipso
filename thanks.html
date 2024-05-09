@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main-container{
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            margin-top: 4%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #container{
+            width: 30vw;
+            height: 20vh;
+            background-color: rgb(9, 189, 9);
+        }
+        #container button{
+            background-color: rgb(8, 8, 167);
+            border: 0;
+            padding: 10px;
+            width: 7vw;
+            border-radius: 10px;
+            margin-top: 6%;
+        }
+        #container button a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            border: 0;
+        }
+        @media screen and (max-width:768px){
+            #container{
+            width: 90vw;
+            height: 20vh;
+            background-color: green;
+        }
+        #container button{
+            background-color: rgb(8, 8, 167);
+            border: 0;
+            padding: 10px;
+            width: 30vw;
+            border-radius: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div id="container">
+            <center>
+                <h1 style="color: aliceblue;">Submitted Succefully</h1>
+                <button><a href="index.html">Back Home</a></button>
+            </center>
+        </div>
+    </div>
+</body>
+</html>

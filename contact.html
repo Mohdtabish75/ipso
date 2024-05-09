@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Patient-safety</title>
+    <style>
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .hero-section {
+            height: 450px;
+            width: 100vw;
+            background: rgb(92, 177, 255);
+            background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            position: absolute;
+            z-index: -1;
+        }
+
+        .how-section1{
+            margin-top:-7%;
+            padding: 7%;
+        }
+        .how-section1 .row h1
+        {
+            margin-top: 30%;
+        }
+        .how-img 
+        {
+            text-align: center;
+        }
+        .how-img img{
+            width: 30%;
+        }
+        .img-fluid{
+            border-radius: 16px;
+            margin-left: 15%;
+            margin-top: 18%;
+        }
+        #main-container{
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        #main-container #container{
+            width: 70vw;
+            background-color: #b7edf4;
+            border-radius: 40px;
+            padding: 3%;
+            margin-top: 22%;
+        }
+        #main-container #container #image{
+            display: flex;
+            justify-content: center;
+        }
+        #main-container #container #image form label{
+          font-size: 1.6rem;
+        }
+        #main-container #container #image form input{
+          width: 60vw;
+          height: 6vh;
+          margin-bottom: 1%;
+          border-radius: 10px;
+          border: 0;
+          border: 2px solid #9A9A9ACC;
+          padding-left: 2%;
+          outline: none;
+          box-shadow: 0px 4px 5px gray;
+        }
+        #main-container #container #image form textarea{
+          width: 60vw;
+          height: 15vh;
+          margin-bottom: 1%;
+          border-radius: 10px;
+          border: 0;
+          border: 2px solid #9A9A9ACC;
+          padding-left: 2%;
+          outline: none;
+          box-shadow: 0px 4px 5px gray;
+        }
+        #main-container #container #image form #submit{
+          width: 8vw;
+          height: auto;
+          border: 0;
+          padding: 0;
+          margin: 0;
+          font-size: 2rem;
+          border-radius: 20px;
+          color: white;
+          background: linear-gradient(180deg, #4797E1 0%, #329DFF 55.5%, #63A9EA 100%);
+        }
+        footer{
+            width: 100vw;
+            height: 30vh;
+            background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        footer #footer-page{
+            width: 80vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+        footer #footer-page img{
+            width: 20vw;
+        }
+        footer #footer-page ul{
+            display: flex;
+            flex-direction: column;
+        }
+        footer #footer-page ul a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 1.3rem;
+        }
+        footer #footer-page ul a:hover{
+            color: blue;
+        }
+        footer #footer-page #search-box #search{
+            width: 23vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray;
+            border-radius: 20px;
+            
+        }
+        footer #footer-page #search-box #search #input{
+            width: 15vw;
+            height: 4vh;
+            border: none;
+            background-color: transparent;
+        }
+        footer #footer-page #search-box #search #submit{
+            width: 6vw;
+            height: 5vh;
+            padding: 0;
+            font-size: 1.2rem;
+            border: 0;
+            background: linear-gradient(180deg, #4797E1 0%, #329DFF 55.5%, #63A9EA 100%);
+            border-radius: 40px;
+            color: white;
+        }
+        @media screen and (max-width:768px){
+                .nav-link {
+                font-weight: 500;
+            }
+
+            .hero-section {
+                height: auto;
+                width: 100vw;
+                background: rgb(92, 177, 255);
+                background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                position: absolute;
+                z-index: -1;
+            }
+
+            .how-section1{
+                margin-top:-7%;
+                padding: 7%;
+            }
+            .how-section1 .row h1
+            {
+                margin-top: 23%;
+            }
+            .how-img 
+            {
+                text-align: center;
+            }
+            .how-img img{
+                width: 50vw;
+                height: 40vh;
+            }
+            .img-fluid{
+                border-radius: 16px;
+                margin-left: 15%;
+                margin-top: 1%;
+            }
+            #main-container{
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+            }
+            #main-container #container{
+                width: 95vw;
+                background-color: #b7edf4;
+                border-radius: 40px;
+                padding: 3%;
+                margin-top: 84%;
+            }
+            #main-container #container #image{
+                display: flex;
+                justify-content: center;
+            }
+            #main-container #container #image form label{
+            font-size: 1.6rem;
+            }
+            #main-container #container #image form input{
+            width: 80vw;
+            height: 6vh;
+            margin-bottom: 1%;
+            border-radius: 10px;
+            border: 0;
+            border: 2px solid #9A9A9ACC;
+            padding-left: 2%;
+            }
+            #main-container #container #image form textarea{
+            width: 80vw;
+            height: 15vh;
+            margin-bottom: 1%;
+            border-radius: 10px;
+            border: 0;
+            border: 2px solid #9A9A9ACC;
+            padding-left: 2%;
+            }
+            #main-container #container #image form #submit{
+            width: 35vw;
+            height: auto;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            font-size: 2rem;
+            border-radius: 20px;
+            color: white;
+            background: linear-gradient(180deg, #4797E1 0%, #329DFF 55.5%, #63A9EA 100%);
+            }
+            footer{
+                width: 100vw;
+                height:auto;
+                background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+                border-radius: 40px 40px 0 0;
+                padding: 5%;
+
+            }
+            footer #footer-page{
+                width: 85vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                
+            }
+            footer #footer-page p{
+                font-size: 1rem;
+            }
+            footer #footer-page img{
+                width: 60vw;
+            }
+            footer #footer-page ul{
+                display: flex;
+                flex-direction: column;
+            }
+            footer #footer-page ul a{
+                font-family: Arial, Helvetica, sans-serif;
+                color: black;
+                font-size: 1.3rem;
+                cursor: pointer;
+            }
+            
+            footer #footer-page #search-box #search{
+                width: 65vw;
+                height: 5vh;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                border: 1px solid gray;
+                border-radius: 20px;
+                /* padding: 10px; */
+                
+            }
+            footer #footer-page #search-box #search #input{
+                width: 15vw;
+                height: 4vh;
+                border: none;
+                background-color: transparent;
+            }
+            footer #footer-page #search-box #search #submit{
+                width: 20vw;
+                height: 5vh;
+                padding: 0;
+                font-size: 1.2rem;
+                border: 0;
+                background: linear-gradient(180deg, #2f618f 100%, #63A9EA 100%);
+                border-radius: 40px;
+                color: white;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background: linear-gradient(-71deg, rgba(92, 177, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);">
+        <div class="container" style="max-width: 1440px;">
+            <a class="navbar-brand" href="#"><img src="./Assets/logo/IPSO_Logofinal[1].png" alt="logo"
+                    style="width: 220px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patient-safety.html">Patient safety</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="we-do.html">What we do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="hero-section">
+            <div class="how-section1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 style="color: #00B1CA;">Contact us</h1>
+                            <h5>Kindly reach us to get response</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="how-img">
+                                <img src="./Assets/images/Layer 1.png" class="img-fluid" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="main-container">
+      <div id="container">
+          <div id="image">
+            <form action="thanks.html" method="post">
+              <label for="#">Name</label><br>
+              <input type="text" name="name" placeholder="Enter Your name" required><br>
+              <label for="#">Contact Number</label><br>
+              <input type="text" name="contact" placeholder="Enter Your Contact umber" id="" required><br>
+              <label for="#">Email Address</label><br>
+              <input type="text" name="email" placeholder="Enter your email" id="" required><br>
+              <label for="#">Subject</label><br>
+              <input type="text" name="subject" placeholder="Enter Your address" id=""required><br>
+              <label for="#">Description</label><br>
+              <textarea name="message" placeholder="Enter Your message" id=""></textarea><br>
+              <input type="submit" name="submit" id="submit">
+            </form>
+          </div>
+      </div>
+    </div><br><br>
+    <footer>
+        <div id="footer-page">
+            <div>
+                <img src="Assets/logo/IPSO Logofinal[1] single.png" alt=""><br>
+                <p>Indian Patient Safety <br> Outreach Organisation</p>
+            </div>
+            <ul>
+                <a href="#">About us</a>
+                <a href="#">Patient Safety</a>
+                <a href="#">What we do</a>
+                <a href="#">Contact</a>
+            </ul>
+            <div id="search-box">
+                <h1>Be Our  Subscribers <br><p style="font-size: 12px;">to get the latest news</p>
+                    <form action="#">
+                        <div id="search">
+                            <input type="text" name="" id="input">
+                            <input type="submit" name="submit" id="submit">
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
